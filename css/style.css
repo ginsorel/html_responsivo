@@ -1,0 +1,71 @@
+/*
+  Estilos globales 
+ */
+* {
+     margin: 0px; /* Quito todos los margenes*/
+     padding: 0px; /* Quita todo el padding*/
+     list-style: none; /* Quita todos los estilos de lista*/
+     text-decoration: none; /* Quita la decoracion o estilo de los textos*/
+     font-family: sans-serif; /* Formatea todo el documento con el tipo de letra*/
+     box-sizing: border-box; /* Esto asegura que el relleno y el borde estan incluidos en el ancho y alto total de los elementos */
+}
+.contenedor {
+     position: relative;
+     margin: auto;
+     width: 100%;
+     height: auto;
+}
+.fila {
+     position: relative;
+     margin: auto;
+     width: 100%;
+     height: auto;
+     clear: both; /* Es para que respete las cajas flotantes que se encuentran es la misma fila*/
+     display: table;
+}
+/* Esto dice que todas las clases que empiesen con las letras [col] tengan el estilo definido aqui */
+[class*="col"] {
+    float: left;
+    border: 1px solid black;
+    padding: 20px;
+}
+.col12 {
+     width: 100%;
+     background-color: blueviolet;
+}
+.col11 {
+    width: 91.6666666%;
+    background-color: blueviolet;
+}
+.col10 {
+    width: 83.33333333%;
+}
+.col9 {
+    width: 75%;
+}
+.col8 {
+    width: 83.33333333%;
+}
+.col7 {
+    width: 58.33333333%;
+}
+.col6 {
+    width: 50%;
+    background-color: coral;
+}
+.col5 {
+    width: 41.66666667%;
+}
+.col4 {
+    width: 33.33333333%;
+    background-color: cornflowerblue;
+}
+.col3 {
+    width: 25%;
+}
+.col2 {
+    width: 16.66666667%;
+}
+.col1{
+    width: 8.3333333%;
+}
